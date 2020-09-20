@@ -1,0 +1,40 @@
+.table {
+    display: table;
+    width: 300px;
+    border: 1px solid rgba(34,36,38,.15);
+    border-radius: .28571429rem;
+    text-align: left;
+    color: rgba(0,0,0,.87);
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 1em 0;
+    font-size: 1em;
+
+    .row {
+        display: table-row;
+        border: 1px solid black;
+
+        &:first-child {
+            font-weight: 700;
+
+            .column {
+                background: #f9fafb;
+                border-top: none;
+            }
+        }
+
+        .column {
+            display: table-cell;
+            border-top: 1px solid rgba(34,36,38,.1);
+            border-left: 1px solid rgba(34,36,38,.1);
+            cursor: auto;
+            color: rgba(0,0,0,.87);
+            padding: .42em .48em;
+            vertical-align: inherit;
+
+            &:first-child {
+                border-left: none;
+            }
+        }
+    }
+}
